@@ -17,10 +17,12 @@
         </Grid.ColumnDefinitions>
         <TextBox HorizontalAlignment="Left" Height="29" Margin="51,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" RenderTransformOrigin="0.389,0.416" Name="url" Grid.ColumnSpan="2"/>
         <Label Content="Input photo URL" FontSize="19" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="42" Margin="88,149,0,0" VerticalAlignment="Top" Width="302" Grid.ColumnSpan="2"/>
-        <Label Content="Status" Name="Status" HorizontalAlignment="Left" Margin="51,10.4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.573,0.43" Width="73" Grid.Row="1" Height="24"/>
+        <Label Content="Status" Name="Status" HorizontalAlignment="Left" Margin="51,73.4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.573,0.43" Width="73" Grid.Row="1" Height="24"/>
         <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <Button Content="Open folder" HorizontalAlignment="Left" Height="36" Margin="51,260,0,0" VerticalAlignment="Top" Click="FolderExplorerBtn" Width="120" RenderTransformOrigin="-0.227,0.706"/>
-        <Label Content="File Type&#xD;&#xA;" Name ="type" HorizontalAlignment="Left" Margin="215,260,0,0" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2"/>
+        <Button Content="Open folder" HorizontalAlignment="Left" Height="36" Margin="51,20.4,0,0" VerticalAlignment="Top" Click="FolderExplorerBtn" Width="173" RenderTransformOrigin="-0.227,0.706" Grid.Row="1"/>
+        <Label Content="Path&#xD;&#xA;" Name ="type" HorizontalAlignment="Left" Margin="159,73.4,0,0" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox  Name ="name" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="104,273,0,0" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Name: " HorizontalAlignment="Left" Margin="51,270,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

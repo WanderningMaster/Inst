@@ -45,8 +45,7 @@ namespace InstaDownloader
                 fileType += output_url[index];
                 --index;
             }
-            
-            //briliant way to reverse string
+
             char[] charArr = fileType.ToCharArray();
             Array.Reverse(charArr);
             fileType = new string(charArr);

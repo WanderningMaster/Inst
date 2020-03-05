@@ -10,7 +10,7 @@ using System.Threading;
 namespace InstaDownloader
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// tak tse ya
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -24,26 +24,26 @@ namespace InstaDownloader
             FolderBrowserDialog browser = new FolderBrowserDialog();
             string tempPath = "";
             
+            if(name.Text == null | name.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Test");
+                return;
+            }
             //getting save path
             if (browser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 tempPath = browser.SelectedPath; 
             }
 
-            //needful params
             string rootPath = tempPath;
             string DownloadUrl = Parser.urlParse(url.Text).Item1;
             string fileType = Parser.urlParse(url.Text).Item2;
-            
-            //Save path visualize
             type.Content = rootPath;
 
             //Downloading file
             WebClient wc = new WebClient();
             wc.DownloadFile(DownloadUrl, @"" + rootPath + "/a." + fileType);
             Status.Content = "Completed";
-
-            //TODO: Add file name menu 
         }
     }
 }
