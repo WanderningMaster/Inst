@@ -1,0 +1,26 @@
+﻿<Window x:Class="InstaDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstaDownloader"
+        mc:Ignorable="d"
+        Title="Довнлодер" Height="478" Width="489.6">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="51,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" RenderTransformOrigin="0.389,0.416" Name="url" Grid.ColumnSpan="2"/>
+        <Label Content="Input photo URL" FontSize="19" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="42" Margin="88,149,0,0" VerticalAlignment="Top" Width="302" Grid.ColumnSpan="2"/>
+        <Label Content="Status" Name="Status" HorizontalAlignment="Left" Margin="51,10.4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.573,0.43" Width="73" Grid.Row="1" Height="24"/>
+        <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Open folder" HorizontalAlignment="Left" Height="36" Margin="51,260,0,0" VerticalAlignment="Top" Click="FolderExplorerBtn" Width="120" RenderTransformOrigin="-0.227,0.706"/>
+        <Label Content="File Type&#xD;&#xA;" Name ="type" HorizontalAlignment="Left" Margin="215,260,0,0" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
