@@ -26,7 +26,7 @@ namespace InstaDownloader
             
             if(name.Text == null | name.Text == "")
             {
-                System.Windows.Forms.MessageBox.Show("Test");
+                System.Windows.Forms.MessageBox.Show("Input name");
                 return;
             }
             //getting save path
